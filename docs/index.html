@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/portfolio/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521204270"></head> <body> <ui-view></ui-view>    <script type="text/ng-template" id="home.html">
+<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/portfolio/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521204380"></head> <body> <ui-view></ui-view>    <script type="text/ng-template" id="home.html">
 
     <async-img
       class="headerimage intro"
@@ -6,8 +6,6 @@
       on-load="$ctrl.onAsyncImgLoad()"
       on-enter="$ctrl.onAsyncImgEnter()"></async-img>
       
-    <a href="" ng-click="$ctrl.add()">Add</a> -->
-
     <slogan finished="$ctrl.doneFn()"></slogan>
 
     <div class="tags" ng-if="sloganIsDone">
@@ -64,4 +62,4 @@
       class="headerimage intro"
       src="{{$ctrl.images.$404}}"></async-img>
 
-  </script> <script src="uysio.js?1521204270"></script> </body> </html> 
+  </script> <script src="uysio.js?1521204380"></script> </body> </html> 
