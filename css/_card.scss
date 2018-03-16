@@ -1,0 +1,50 @@
+.card {
+    box-shadow: $card;
+    background: white;
+    // border: 1px solid $bgdd;
+    padding: 1em;
+    position: relative;
+    color: $textcolour;
+}
+
+.cardlink:link,
+.cardlink:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+.card:hover {
+    cursor: pointer;
+    @include prefix((
+        transform: scale(1.02)
+    ), webkit moz ms o);
+    z-index: 10;
+}
+
+.card img {
+    box-shadow: $card;
+    width: 100%;
+    // border: 5px solid #333;
+    display: block;
+}
+
+.card em {
+    color: #bbb;
+    font-size: $size / 2.3;
+}
+.card em:before {
+    content: '[ ';
+}
+.card em:after {
+    content: ' ]';
+}
+
+.card p {
+    font-size: $size / 2;
+}
+
+.card h1 {
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid lighten($textcolour, 20%);
+}

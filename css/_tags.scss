@@ -1,0 +1,43 @@
+.tags {
+    padding-bottom: 30px;
+}
+
+.tag {
+    color: lighten($textcolour, 10%);
+    // background-color: $accent;
+    // border: 5px solid lighten($accent, 10%);
+    // padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    margin-right: 20px;
+}
+.tag:first-child::before {
+    content: '';
+}
+.tag:before {
+    content: '';
+}
+.tag:last-child::after {
+    content: '';
+}
+.tag:hover {
+    color: $accent;
+    border-bottom: 3px dotted $accent;
+}
+
+.tag.currenttag {
+    color: $brand;
+    // text-decoration: dashed underline;
+    // background-color: $brand;
+    border-bottom: 3px dotted $brand;
+}
+
+.tag a:link,
+.tag a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+.tag.currenttag a:link {
+    cursor: inherit;
+}

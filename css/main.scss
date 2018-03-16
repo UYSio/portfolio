@@ -1,0 +1,46 @@
+$textcolour: #444;
+//$brand: #0076c9;
+$brand: #75aafd;
+//$accent: #C97700;
+$accent: #f4b268;
+$bg: white;
+$bgd: darken($bg, 4%);
+$bgdd: darken($bg, 8%);
+$phi: 1.61803398875;
+$border: 3px solid $brand;
+$card: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+$size: 1.5em;
+
+// import before others
+@import 'prefixer';
+
+@import 'intro';
+@import 'card';
+@import 'header';
+@import 'typewriter';
+@import 'tags';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    color: $textcolour;
+    background-color: $bgd;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-weight: normal;
+    font-size: $size;
+    margin: 30px;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+}

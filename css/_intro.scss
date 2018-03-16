@@ -1,0 +1,25 @@
+.intro.ng-enter-stagger,
+.intro.ng-leave-stagger,
+.intro.ng-move-stagger {
+    @include prefix((
+        transition-delay:0.2s
+    ), webkit moz ms o);
+}
+
+.intro.ng-enter,
+.intro.ng-leave
+.intro.ng-move {
+    transition:0.5s linear all;
+}
+
+.intro.ng-enter,
+.intro.ng-leave.ng-leave-active
+.intro.ng-move {
+    opacity:0;
+}
+
+.intro.ng-enter.ng-enter-active,
+.intro.ng-leave
+.intro.ng-move.ng-move-active {
+    opacity:1;
+}
