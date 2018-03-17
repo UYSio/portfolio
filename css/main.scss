@@ -42,5 +42,11 @@ body {
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, auto);
+    // grid-auto-rows: minmax(250px, auto);
+}
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
