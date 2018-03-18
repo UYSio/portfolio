@@ -1,4 +1,4 @@
-.PHONY: run dist cards
+.PHONY: all run dist cards
 
 dist:
 	mkdir -p docs
@@ -14,3 +14,6 @@ portfolio:
 	@./node_modules/.bin/gsjson 1xyzQima2NzTkX_47pqE9dJ-aLHgNAHaapsU0p0g6xgU portfolio.json
 	@echo "downloaded latest data"
 	@cp portfolio.json dist/
+
+all:
+	make portfolio && make dist && git add . && git commit -m portfolio && git push origin master
